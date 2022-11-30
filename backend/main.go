@@ -21,11 +21,11 @@ func setEnvVariables() {
 		err := godotenv.Load()
 		if err != nil {
 			log.Printf("No .env file found... Defaulting WHISPER_MODEL to 0")
-			WhisperModel = "small"
+			WhisperModel = "medium"
 		}
 		os.Getenv("WHISPER_MODEL")
 		if WhisperModel == "" {
-			WhisperModel = "small"
+			WhisperModel = "medium"
 		}
 	}
 	log.Printf("Selected model: %v", WhisperModel)

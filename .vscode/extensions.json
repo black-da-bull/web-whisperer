@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "matthewpi.caddyfile-support",
+        "ms-azuretools.vscode-docker",
+        "svelte.svelte-vscode"
+    ]
+}
