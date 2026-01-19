@@ -18,7 +18,7 @@ RUN find /app -name '*.svelte' -exec sed -i "s/ALLOW_FILES/$ALLOW_FILE_UPLOADS/g
 
 RUN yarn build
 
-FROM caddy:alpine
+FROM caddy:2.11-alpine
 
 
 COPY --from=build /app/dist/ /var/www/html
